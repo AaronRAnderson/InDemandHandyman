@@ -1,0 +1,29 @@
+<div class="container-fluid nav-background">
+	<div class="row">
+		<div class="col-md-2 nav-tabs">
+			<%= image_tag 'logo.jpg', class: 'logo' %>
+		</div>
+		<div class="col-md-4 nav-tabs">
+			<h3 class="brand-name">In Demand Handyman</h3>
+		</div>
+		<div class="col-md-6 nav-col">
+			<ul class="nav nav-tabs">
+				<li class="<%= active?(root_path)%>">
+					<%= link_to 'Home', root_path %>
+				</li>
+				<li class="<%= active?(about_path)%>">
+					<%= link_to 'About', about_path %>
+				</li>
+				<li class="<%= active?(contact_path)%>">
+					<%= link_to 'Contact', contact_path %>
+				</li>
+				<li class="<%= active?(form_path)%>">
+					<%= link_to 'Estimate', form_path %>
+				</li>
+				<li class="number">
+					<h4>123-345-6789</h4>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
