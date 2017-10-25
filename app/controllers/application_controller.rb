@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
   module BigMouthFrogCopyrightTool
     class Renderer
       def self.copyright name, msg
-        "&copy; #{Time.now.year} | Powered by: <a href='bigmouthfrogdev.com'>#{name}</a> | #{msg}".html_safe
+        "&copy; #{Time.now.year} | Powered by: <a href='https://bigmouthfrogdev.com' target='_blank'>#{name}</a> | #{msg}".html_safe
       end
     end
   end

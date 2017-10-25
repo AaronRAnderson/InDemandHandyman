@@ -10,4 +10,7 @@ class PagesController < ApplicationController
 
   def form
   end
+
+  def technique
+  end
 end
